@@ -1,0 +1,23 @@
+h1 {
+    margin-top: 10px;
+    display:inline-block;
+}
+
+#nerdySlime {
+    display:inline-block;
+    vertical-align: top;
+    margin: 10px 0px 0px 10px;
+    width:50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+
+#td-list-ul{
+    list-style-type: none;
+}
+
+#wallFlesh {
+    width: 550px;
+}
