@@ -1,3 +1,8 @@
+.link-ext {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
 h1 {
     margin-top: 10px;
     display:inline-block;
@@ -16,6 +21,10 @@ h1 {
 
 #td-list-ul{
     list-style-type: none;
+}
+
+#table-cont{
+    overflow-x:auto;
 }
 
 #wallFlesh {

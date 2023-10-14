@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -44,13 +44,13 @@
               </ul>
             </div>
         </nav>
-        <h1>Terraria</h1><img src="./public/nerdySlime.jpg" id="nerdySlime">
+        <h1>Terraria</h1><img src="./public/nerdySlime.jpg" id="nerdySlime" alt="">
         <div class="">
             <div class="row">
-                <div class="col">
+                <div class="col-md-6 col-sm-12">
                     <h2>¿Qué es Terraria?</h2>
-                    <p>Terraria es un videojuego de acción, aventura y de sandbox producido de forma independiente por el estudio <a href="https://re-logic.com/">Re-Logic</a>. Tiene características tales como la exploración, la artesanía, la construcción de estructuras y el combate. Se lanzó el 16 de mayo de 2011. Hasta la fecha lleva más de 45 000 000 de copias vendidas entre sus diversas plataformas.</p>
-                    <p>Terraria es un videojuego de mundo abierto en 2D. Contiene elementos de construcción, exploración, aventura y combate, muy similar a juegos clásicos de la consola Super NES, como por ejemplo la serie <a href="https://es.wikipedia.org/wiki/Metroid">Metroid</a>, y a otras entregas no tan antiguas como <a href="https://es.wikipedia.org/wiki/Minecraft">Minecraft</a>.</p>
+                    <p>Terraria es un videojuego de acción, aventura y de sandbox producido de forma independiente por el estudio <a class="link-ext" href="https://re-logic.com/">Re-Logic</a>. Tiene características tales como la exploración, la artesanía, la construcción de estructuras y el combate. Se lanzó el 16 de mayo de 2011. Hasta la fecha lleva más de 45 000 000 de copias vendidas entre sus diversas plataformas.</p>
+                    <p>Terraria es un videojuego de mundo abierto en 2D. Contiene elementos de construcción, exploración, aventura y combate, muy similar a juegos clásicos de la consola Super NES, como por ejemplo la serie <a class="link-ext" href="https://es.wikipedia.org/wiki/Metroid">Metroid</a>, y a otras entregas no tan antiguas como <a class="link-ext" href="https://es.wikipedia.org/wiki/Minecraft">Minecraft</a>.</p>
                     <h3>¿Por qué jugar?</h3>
                     <ul>
                         <li>Desafiante</li>
@@ -58,30 +58,32 @@
                         <li>Satisfacción al progresar</li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col-md-6">
                     <h2>El desarrollo de Terraria</h2>
-                    <iframe width="504" height="284" src="https://www.youtube.com/embed/ENT2_yeBf0w?si=KYeiICd2m6zkJEv1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ENT2_yeBf0w?si=KYeiICd2m6zkJEv1" title="How Terraria was Made" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
         <h2>Personajes</h2>
         <figure>
-            <img src="./public/arrivemsg.jpg" alt="Johnny the Angler has arrived!">
+            <img lang="en" src="./public/arrivemsg.jpg" alt="Johnny the Angler has arrived!">
             <figcaption>Mensaje que aparece cuando un nuevo personaje se muda.</figcaption>
         </figure>
         
         <div class="">
             <div class="row">
-                <div class="col">
+                <div class="col" id="table-cont">
                     <table class="table">
                         <tr>
-                            <th>NPC</th>
-                            <th>¿Cuándo aparece?</th>
-                            <th>Utilidad</th>
-                            <th>Apariencia</th>
+                            <th scope="col">NPC</th>
+                            <th scope="col">¿Cuándo aparece?</th>
+                            <th scope="col">Utilidad</th>
+                            <th scope="col">Apariencia</th>
                         </tr>
                         <tr>
-                            <td>Guía</td>
+                            <th scope="row">Guía</th>
                             <td>Inicio del juego</td>
                             <td>
                                 <ul class="list-group" id="td-list-ul">
@@ -101,7 +103,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Mago</td>
+                            <th scope="row">Mago</th>
                             <td>Después de la muralla de carne</td>
                             <td>
                                 <ul class="list-group" id="td-list-ul">
@@ -118,7 +120,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Steampunker</td>
+                            <th scope="row">Steampunker</th>
                             <td>Después de derrotar a un jefe mecánico</td>
                             <td>
                                 <ul class="list-group" id="td-list-ul">
@@ -135,7 +137,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Recaudador de impuestos</td>
+                            <th scope="row">Recaudador de impuestos</th>
                             <td>En el modo difícil, al aventar polvo purificador a una alma torturada</td>
                             <td>
                                 <ul class="list-group" id="td-list-ul">
@@ -149,7 +151,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>Pirata</td>
+                            <th scope="row">Pirata</th>
                             <td>Después de vencer a la invación pirata</td>
                             <td>
                                 <ul class="list-group" id="td-list-ul">
@@ -169,31 +171,31 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container mb-4">
             <h2>¿Quieres unirte a nosotros y cooperar? ¡Regístrate!</h2>
             <form>
                 <div class="form-group">
-                  <label for="username">Nombre de usuario:</label>
-                  <input type="email" class="form-control" id="username" placeholder="terrariano72">
+                  <label for="username">* Nombre de usuario:</label>
+                  <input type="text" class="form-control" id="username" placeholder="terrariano72" required>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Correo:</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.domain">
+                  <label for="exampleInputEmail1">* Correo:</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.domain" required>
                   <small id="emailHelp" class="form-text text-muted">Tu correo no se compartirá con nadie más.</small>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Contraseña:</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña123">
+                  <label for="exampleInputPassword1">* Contraseña:</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contraseña123" required>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword2">Confirmar contraseña:</label>
-                  <input type="password" class="form-control" id="exampleInputPassword2" placeholder="contraseña123">
+                  <label for="exampleInputPassword2">* Confirmar contraseña:</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" placeholder="contraseña123" required>
                 </div>
                 <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones</label>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                  <label class="form-check-label" for="exampleCheck1">* Acepto los términos y condiciones</label>
                 </div>
-                <button type="submit" class="btn btn-primary">Registrar</button>
+                <button type="submit" class="btn">Registrar</button>
               </form>
         </div>
     </div>
